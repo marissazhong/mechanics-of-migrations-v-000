@@ -1,9 +1,4 @@
 class CreateArtists < ActiveRecord::Migrations
-  def up
-  end
-
-  def down
-  end
 
   def change
     create_table :artists {|t|
@@ -12,4 +7,5 @@ class CreateArtists < ActiveRecord::Migrations
       t.integer :age
       t.string :hometown
     }
+  end
 end
